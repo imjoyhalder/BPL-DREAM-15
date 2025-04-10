@@ -37,7 +37,7 @@ const Navbar = ({ coins }) => {
                 {/* Mobile Hamburger Icon */}
                 <div className='md:hidden'>
                     <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-700 focus:outline-none">
-                        <img src={menu} alt="" />
+                        <img className='w-10' src={menu} alt="" />
                     </button>
                 </div>
             </div>

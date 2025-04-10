@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
+import Players from './Components/Players/Players'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <>
       <Navbar coins = {coins}></Navbar>
       <Banner handelCoins={handelCoins} ></Banner>
+      <Players></Players>
     </>
   )
 }
