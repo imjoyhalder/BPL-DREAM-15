@@ -2,7 +2,7 @@ import React from 'react';
 import user from '../../assets/image/user.svg'
 import flag from '../../assets/image/icons8-flag-24.png'
 
-const Player = ({ player }) => {
+const Player = ({ player, handleSelectedPlayers }) => {
     const { battingStyle, name, country, image, role, biddingPrice } = player
     return (
         <div className=" border mx-auto rounded-xl p-4 shadow-md m-4">
@@ -33,7 +33,7 @@ const Player = ({ player }) => {
                 </div>
                 <div className='flex justify-between items-center'>
                     <h1 className='font-bold'>Price: ${biddingPrice}</h1>
-                    <button className='border-2 bg-green-500 font-bold p-2 rounded-xl hover:bg-white hover:text-green-500 transition-all duration-300'>Chose Player</button>
+                    <button onClick={()=>handleSelectedPlayers(player)} className='border-2 bg-green-500 font-bold p-2 rounded-xl hover:bg-white hover:text-green-500 transition-all duration-300'>Chose Player</button>
                 </div>
             </div>
         </div>
