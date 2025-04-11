@@ -6,6 +6,7 @@ import Players from './Components/Players/Players'
 import SelectedPlayers from './Components/SelectedPlayers/SelectedPlayers'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Footer from './Components/Footer/Footer'
 
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
       <Banner handelCoins={handelCoins} ></Banner>
       <Players handleSelectedPlayers={handleSelectedPlayers} availablePlayer={availablePlayer} handleAvailablePlayers={handleAvailablePlayers}></Players>
       <SelectedPlayers selectedPlayers={selectedPlayers} ></SelectedPlayers>
-
+      <Footer></Footer>
       {/* Toast container for notifications */}
       <ToastContainer
         position="top-right"
